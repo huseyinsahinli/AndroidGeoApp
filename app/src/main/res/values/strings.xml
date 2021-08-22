@@ -1,0 +1,44 @@
+<resources>
+
+    <string name="app_name">Geometric Calculation</string>
+    <string name="Triangle">Triangle</string>
+    <string name="Square">Square</string>
+    <string name="Rectangle">Rectangle</string>
+    <string name="Parallelogram">Parallelogram</string>
+    <string name="Trapezoid">Trapezoid</string>
+    <string name="Quadrilateral">Quadrilateral</string>
+    <string name="Quadrangle">Quadrangle</string>
+    <string name="Polygon">Polygon</string>
+    <string name="Circle">Circle</string>
+    <string name="Ring">Ring</string>
+    <string name="Ellipse">Ellipse</string>
+    <string name="Sphere">Sphere</string>
+    <string name="Cube">Cube</string>
+    <string name="Parallel">Parallel</string>
+    <string name="Cylinder">Cylinder</string>
+    <string name="Area">Area</string>
+    <string name="Perimeter">Perimeter</string>
+    <string name="RightTriangle">Right</string>
+    <string name="IsoscelesTriangle">Isosceles</string>
+    <string name="EquilateralTriangle">Equilateral</string>
+    <string name="Inscribedcircle">Inscribed Circle</string>
+    <string name="EuclideanTheorem">Euclidean theorem</string>
+    <string name="StewartTheorem">Stewart theorem</string>
+    <string name="PythagoreanTheorem">Pythagorean theorem</string>
+    <string name="PythagoreanSentenceOne">Please select the number type.</string>
+    <string name="PythagoreanSentenceTwo">Regular Numbers</string>
+    <string name="PythagoreanSentenceThree">Exponential Numbers</string>
+    <string name="PythagoreanSentenceFour">The hypotenuse cannot be shorter or equal.</string>
+    <string name="PythagoreanSentenceFive">Enter value to continue.</string>
+    <string name="Button_Text">Calculate</string>
+    <string name="StewartTheoremSentenceOne">Please enter all values.</string>
+    <string name="Result">Result</string>
+    <string name="InscribedcircleSentenceOne">Radius</string>
+    <string name="InscribedcircleSentenceTwo">Diameter</string>
+    <string name="Height">Height</string>
+    <string name="Formula">Formula</string>
+    <string name="Information">Detects the formula based on the value you enter</string>
+    <string name="Diagonal">Diagonal</string>
+    <string name="Volume">Volume</string>
+    <string name="PolySentecenOne">n = Number of Edges</string>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Geometrik Hesaplama</string>
+    <string name="Triangle">Üçgen</string>
+    <string name="Square">Kare</string>
+    <string name="Rectangle">Dikdörtgen</string>
+    <string name="Parallelogram">Paralelkenar</string>
+    <string name="Trapezoid">Yamuk</string>
+    <string name="Quadrilateral">Dörtgen</string>
+    <string name="Quadrangle">Eş Dörtgen</string>
+    <string name="Polygon">Çokgen</string>
+    <string name="Circle">Daire</string>
+    <string name="Ring">Halka</string>
+    <string name="Ellipse">Elips</string>
+    <string name="Sphere">Küre</string>
+    <string name="Cube">Küp</string>
+    <string name="Parallel">Paralelyüz</string>
+    <string name="Cylinder">Silindir</string>
+
+    <string name="RightTriangle">Dik Üçgen</string>
+    <string name="EquilateralTriangle">Eşkenar Üçgen</string>
+    <string name="IsoscelesTriangle">İkizkenar Üçgen</string>
+    <string name="Inscribedcircle">İç Teğet Çember</string>
+    <string name="EuclideanTheorem">Öklid teoremi</string>
+    <string name="StewartTheorem">Stewart teoremi</string>
+    <string name="PythagoreanTheorem">Pisagor teoremi</string>
+    <string name="PythagoreanSentenceOne">Lütfen sayı tipini seçin.</string>
+    <string name="PythagoreanSentenceTwo">Normal Sayılar</string>
+    <string name="PythagoreanSentenceThree">Kare Sayılar</string>
+    <string name="PythagoreanSentenceFour">Hipotenüs daha kısa veya eşit olamaz.</string>
+    <string name="PythagoreanSentenceFive">Devam etmek için değer girin.</string>
+    <string name="Button_Text">Hesapla</string>
+    <string name="Result">Sonuç</string>
+    <string name="Height">Yükseklik</string>
+    <string name="Area">Alanı</string>
+    <string name="Perimeter">Çevresi</string>
+    <string name="Formula">Formül</string>
+    <string name="Diagonal">Köşegen</string>
+    <string name="Volume">Hacim</string>
+    <string name="Information">Girdiğiniz değere göre formülü algılar</string>
+    <string name="StewartTheoremSentenceOne">Lütfen tüm değerleri giriniz</string>
+    <string name="InscribedcircleSentenceOne">Yarıçap</string>
+    <string name="InscribedcircleSentenceTwo">Çap</string>
+    <string name="PolySentecenOne">n = Kenar Sayısı</string>
+</resources>
