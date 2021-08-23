@@ -90,7 +90,6 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemClickListener {
         arrayList.add((LanguageItem(R.drawable.kp, getString(R.string.Cube))))
         arrayList.add((LanguageItem(R.drawable.palek, getString(R.string.Parallel))))
         arrayList.add((LanguageItem(R.drawable.cylender, getString(R.string.Cylinder))))
-        arrayList.add((LanguageItem(R.drawable.cylender, getString(R.string.Cylinder))))
 
 
 
@@ -112,7 +111,7 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemClickListener {
         MainCubeActivity::class.java,
         MainParallelActivity::class.java,
         MainCylinderActivity::class.java,
-        MainCylinderActivity::class.java,
+
 
 
         )
