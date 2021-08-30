@@ -3,11 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Triangle.fragments.TriangleArea">
+    tools:context=".SquareFragment">
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <TextView
@@ -15,7 +17,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:text="@string/Triangle"
+            android:text="@string/Square"
             android:textColor="@color/teal_700"
             android:textSize="20sp"
             android:textStyle="bold"></TextView>
@@ -23,11 +25,12 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
-            android:layout_height="165dp"
+            android:layout_height="180dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:src="@drawable/fragment_area"
-            tools:ignore="ImageContrastCheck" />
+            android:src="@drawable/fragment_square"
+
+            />
 
 
         <LinearLayout
@@ -44,19 +47,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:paddingLeft="5dp">
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1"
+                    android:gravity="center"
                     android:text="@string/a"
                     android:textColor="@color/black"
                     android:textSize="25sp" />
 
                 <EditText
-                    android:id="@+id/triangle_area_number_a"
+                    android:id="@+id/fragment_square_number_a"
                     android:layout_width="95dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center"
@@ -72,55 +77,16 @@
                     android:textColor="@color/white"
                     android:textColorHint="@color/white"
                     android:textSize="20sp"
-                    android:textStyle="bold"
-                    tools:ignore="DuplicateSpeakableTextCheck" />
+                    android:textStyle="bold"/>
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="10dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="@string/h"
-                    android:textColor="@color/black"
-                    android:textSize="25sp" />
-
-                <EditText
-                    android:id="@+id/triangle_area_number_h"
-                    android:layout_width="95dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/edit_text_bg"
-                    android:ems="10"
-                    android:gravity="center"
-                    android:hint="@string/_0"
-                    android:importantForAutofill="no"
-                    android:inputType="number"
-                    android:paddingLeft="2dp"
-                    android:paddingRight="2dp"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textColorHint="@color/white"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
         </LinearLayout>
 
 
         <Button
 
-            android:id="@+id/triangle_are_calculate"
+            android:id="@+id/fragment_square_calculate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -128,18 +94,19 @@
             android:background="@drawable/button_desing"
             android:text="@string/Button_Text"
             android:textAllCaps="false"
+            android:gravity="center"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/triangle_area_result"
+            android:id="@+id/fragment_square_result"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="15dp"
-            android:padding="5dp"
             android:background="@drawable/result_text_desing"
+            android:padding="5dp"
 
             android:textAlignment="center"
             android:textColor="@color/teal_700"

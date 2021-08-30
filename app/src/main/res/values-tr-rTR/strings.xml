@@ -10,7 +10,7 @@
     <string name="Quadrangle">Eş Dörtgen</string>
     <string name="Polygon">Çokgen</string>
     <string name="Circle">Daire</string>
-    <string name="Ring">Halka</string>
+
     <string name="Ellipse">Elips</string>
     <string name="Sphere">Küre</string>
     <string name="Cube">Küp</string>
@@ -28,7 +28,7 @@
     <string name="PythagoreanSentenceTwo">Normal Sayılar</string>
     <string name="PythagoreanSentenceThree">Kare Sayılar</string>
     <string name="PythagoreanSentenceFour">Hipotenüs daha kısa veya eşit olamaz.</string>
-    <string name="PythagoreanSentenceFive">Devam etmek için değer girin.</string>
+
     <string name="Button_Text">Hesapla</string>
     <string name="Result">Sonuç</string>
     <string name="Height">Yükseklik</string>
@@ -42,4 +42,20 @@
     <string name="InscribedcircleSentenceOne">Yarıçap</string>
     <string name="InscribedcircleSentenceTwo">Çap</string>
     <string name="PolySentecenOne">n = Kenar Sayısı</string>
+    <string name="a">a </string>
+    <string name="h">h </string>
+    <string name="_0">0</string>
+    <string name="ToastMessage">Devam etmek için değer girin.</string>
+    <string name="b">b </string>
+    <string name="c">c </string>
+    <string name="d">d </string>
+    <string name="e">e </string>
+    <string name="k">k </string>
+    <string name="l">l </string>
+    <string name="m">m </string>
+    <string name="n">n </string>
+    <string name="p">p </string>
+    <string name="r">r </string>
+    <string name="d1">d1 </string>
+    <string name="d2">d2 </string>
 </resources>

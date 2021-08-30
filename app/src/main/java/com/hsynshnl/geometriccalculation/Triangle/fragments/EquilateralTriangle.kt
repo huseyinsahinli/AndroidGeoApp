@@ -11,7 +11,6 @@ import com.hsynshnl.geometriccalculation.R
 import kotlinx.android.synthetic.main.fragment_equilateral_triangle.calculate2
 import kotlinx.android.synthetic.main.fragment_equilateral_triangle.text_view_number_a
 import kotlinx.android.synthetic.main.fragment_equilateral_triangle.text_view_result2
-import kotlinx.android.synthetic.main.fragment_triangle__isosceles.*
 
 class EquilateralTriangle : Fragment() {
 
@@ -36,11 +35,11 @@ class EquilateralTriangle : Fragment() {
             getString(R.string.Area) + ": \n" + getString(R.string.Height) + ": \n"+getString(R.string.Perimeter)+": \n"
 
         calculate2.setOnClickListener {
-            var number_a = text_view_number_a.text.toString().toDoubleOrNull()
-            var number_h:Double?=null
-            var result_are:Double?=null
-            var result_height:Double?=null
-            var result_perimeter:Double?=null
+            val number_a = text_view_number_a.text.toString().toDoubleOrNull()
+
+            val result_are:Double
+            val result_height:Double
+            val result_perimeter:Double
             if (number_a!=null){
                 result_are=(Math.sqrt(3.0)/4)*Math.pow(number_a,2.0)
 
@@ -57,7 +56,7 @@ class EquilateralTriangle : Fragment() {
 
 
             }else{
-                Toast.makeText(context?.applicationContext, getString(R.string.PythagoreanSentenceFive), Toast.LENGTH_SHORT).show()
+                Toast.makeText(context?.applicationContext, getString(R.string.ToastMessage), Toast.LENGTH_SHORT).show()
             }
         }
     }

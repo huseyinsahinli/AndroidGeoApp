@@ -7,14 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.hsynshnl.geometriccalculation.R
-import kotlinx.android.synthetic.main.fragment_pythagorean_theorem.*
-import kotlinx.android.synthetic.main.fragment_pythagorean_theorem.text_view_number_a
 import kotlinx.android.synthetic.main.fragment_stewart_theorem.*
-import kotlinx.android.synthetic.main.fragment_stewart_theorem.calculate2
-import kotlinx.android.synthetic.main.fragment_stewart_theorem.text_view_number_b
-import kotlinx.android.synthetic.main.fragment_stewart_theorem.text_view_number_c
-import kotlinx.android.synthetic.main.fragment_stewart_theorem.text_view_result2
-import kotlinx.android.synthetic.main.fragment_triangle__inscribedcircle.*
 
 class StewartTheorem : Fragment() {
 
@@ -34,29 +27,29 @@ class StewartTheorem : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        text_view_result2.text="x = \nx² ="
+        triangle_stewart_result.text="x = \nx² ="
 
-        calculate2.setOnClickListener {
+        triangle_stewart_calculate.setOnClickListener {
 
-            var numberb = text_view_number_b.text.toString().toDoubleOrNull()
-            var numberc = text_view_number_c.text.toString().toDoubleOrNull()
-            var numberm = text_view_number_m.text.toString().toDoubleOrNull()
-            var numbern = text_view_number_n.text.toString().toDoubleOrNull()
-            if (numberb==null||numberc==null||numberm==null||numbern==null){
-                text_view_result2.text=getString(R.string.StewartTheoremSentenceOne)
+            var b_number = triangle_stewart_number_b.text.toString().toDoubleOrNull()
+            var c_number = triangle_stewart_number_c.text.toString().toDoubleOrNull()
+            var m_number = triangle_stewart_number_m.text.toString().toDoubleOrNull()
+            var n_number = triangle_stewart_number_n.text.toString().toDoubleOrNull()
+            if (b_number==null||c_number==null||m_number==null||n_number==null){
+                triangle_stewart_result.text=getString(R.string.StewartTheoremSentenceOne)
             }
             else{
-                var powerNumberB=Math.pow(numberb, 2.0)
-                var powerNumberC=Math.pow(numberc, 2.0)
+                var powerNumberB=Math.pow(b_number, 2.0)
+                var powerNumberC=Math.pow(c_number, 2.0)
 
-                var result=((powerNumberB*numberm)+(powerNumberC*numbern)/numberm+numbern)-numberm*numbern
+                var result=((powerNumberB*m_number)+(powerNumberC*n_number)/m_number+n_number)-m_number*n_number
                 var resultsqrt=Math.sqrt(result)
-                text_view_result2.text="b=${numberb}\tc=${numberc}\tm=${numberm}\tn=${numbern}\n"+getString(R.string.Result)+"\nx = ${resultsqrt.format(2)}\nx² = ${result.format(2)}"
+                triangle_stewart_result.text="b=${b_number}\tc=${c_number}\tm=${m_number}\tn=${n_number}\n"+getString(R.string.Result)+"\nx = ${resultsqrt.format(2)}\nx² = ${result.format(2)}"
 
-                text_view_number_b.text = Editable.Factory.getInstance().newEditable("")
-                text_view_number_c.text = Editable.Factory.getInstance().newEditable("")
-                text_view_number_n.text = Editable.Factory.getInstance().newEditable("")
-                text_view_number_m.text = Editable.Factory.getInstance().newEditable("")
+                triangle_stewart_number_b.text = Editable.Factory.getInstance().newEditable("")
+                triangle_stewart_number_c.text = Editable.Factory.getInstance().newEditable("")
+                triangle_stewart_number_m.text = Editable.Factory.getInstance().newEditable("")
+                triangle_stewart_number_n.text = Editable.Factory.getInstance().newEditable("")
             }
         }
 

@@ -10,7 +10,7 @@
     <string name="Quadrangle">Quadrangle</string>
     <string name="Polygon">Polygon</string>
     <string name="Circle">Circle</string>
-    <string name="Ring">Ring</string>
+
     <string name="Ellipse">Ellipse</string>
     <string name="Sphere">Sphere</string>
     <string name="Cube">Cube</string>
@@ -29,7 +29,8 @@
     <string name="PythagoreanSentenceTwo">Regular Numbers</string>
     <string name="PythagoreanSentenceThree">Exponential Numbers</string>
     <string name="PythagoreanSentenceFour">The hypotenuse cannot be shorter or equal.</string>
-    <string name="PythagoreanSentenceFive">Enter value to continue.</string>
+
+    <string name="ToastMessage">Enter value to continue.</string>
     <string name="Button_Text">Calculate</string>
     <string name="StewartTheoremSentenceOne">Please enter all values.</string>
     <string name="Result">Result</string>
@@ -41,4 +42,22 @@
     <string name="Diagonal">Diagonal</string>
     <string name="Volume">Volume</string>
     <string name="PolySentecenOne">n = Number of Edges</string>
+    <string name="a">a </string>
+    <string name="_0">0</string>
+    <string name="b">b </string>
+    <string name="c">c </string>
+    <string name="d">d </string>
+    <string name="e">e </string>
+    <string name="k">k </string>
+    <string name="l">l </string>
+    <string name="m">m </string>
+    <string name="n">n </string>
+    <string name="p">p </string>
+    <string name="h">h </string>
+    <string name="r">r </string>
+    <string name="d1">d2 </string>
+    <string name="d2">d2 </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

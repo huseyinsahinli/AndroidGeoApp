@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/husey/AndroidStudioProjects/GeometricCalculation/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/husey/AndroidStudioProjects/GeometricCalculation/app/src/main/res/drawable/button_desing.xml" value="0.2203125" />
+        <entry key="..\:/Users/husey/AndroidStudioProjects/GeometricCalculation/app/src/main/res/drawable/edit_text_bg.xml" value="0.2203125" />
+        <entry key="..\:/Users/husey/AndroidStudioProjects/GeometricCalculation/app/src/main/res/drawable/result_text_desing.xml" value="0.2203125" />
+        <entry key="..\:/Users/husey/AndroidStudioProjects/GeometricCalculation/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/husey/AndroidStudioProjects/GeometricCalculation/app/src/main/res/layout/activity_main_circle.xml" value="0.25" />
         <entry key="..\:/Users/husey/AndroidStudioProjects/GeometricCalculation/app/src/main/res/layout/activity_main_cube.xml" value="0.16296296296296298" />
         <entry key="..\:/Users/husey/AndroidStudioProjects/GeometricCalculation/app/src/main/res/layout/activity_main_cylinder.xml" value="0.14351851851851852" />
@@ -19,13 +22,30 @@
         <entry key="..\:/Users/husey/AndroidStudioProjects/GeometricCalculation/app/src/main/res/layout/activity_main_square.xml" value="0.22" />
         <entry key="..\:/Users/husey/AndroidStudioProjects/GeometricCalculation/app/src/main/res/layout/activity_main_trapezoid.xml" value="0.22" />
         <entry key="..\:/Users/husey/AndroidStudioProjects/GeometricCalculation/app/src/main/res/layout/activity_main_triangle.xml" value="0.2" />
+        <entry key="..\:/Users/husey/AndroidStudioProjects/GeometricCalculation/app/src/main/res/layout/card_view_item_grind.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/husey/AndroidStudioProjects/GeometricCalculation/app/src/main/res/layout/custom_list_item.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/husey/AndroidStudioProjects/GeometricCalculation/app/src/main/res/layout/fragment_circle.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/husey/AndroidStudioProjects/GeometricCalculation/app/src/main/res/layout/fragment_cube.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/husey/AndroidStudioProjects/GeometricCalculation/app/src/main/res/layout/fragment_cylinder.xml" value="0.2" />
+        <entry key="..\:/Users/husey/AndroidStudioProjects/GeometricCalculation/app/src/main/res/layout/fragment_ellipse.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/husey/AndroidStudioProjects/GeometricCalculation/app/src/main/res/layout/fragment_equilateral_triangle.xml" value="0.22" />
         <entry key="..\:/Users/husey/AndroidStudioProjects/GeometricCalculation/app/src/main/res/layout/fragment_euclidean_theorem.xml" value="0.25" />
+        <entry key="..\:/Users/husey/AndroidStudioProjects/GeometricCalculation/app/src/main/res/layout/fragment_main.xml" value="0.22" />
+        <entry key="..\:/Users/husey/AndroidStudioProjects/GeometricCalculation/app/src/main/res/layout/fragment_parallel.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/husey/AndroidStudioProjects/GeometricCalculation/app/src/main/res/layout/fragment_parallelogram.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/husey/AndroidStudioProjects/GeometricCalculation/app/src/main/res/layout/fragment_polygon.xml" value="0.25" />
         <entry key="..\:/Users/husey/AndroidStudioProjects/GeometricCalculation/app/src/main/res/layout/fragment_pythagorean_theorem.xml" value="0.25" />
-        <entry key="..\:/Users/husey/AndroidStudioProjects/GeometricCalculation/app/src/main/res/layout/fragment_stewart_theorem.xml" value="0.33" />
-        <entry key="..\:/Users/husey/AndroidStudioProjects/GeometricCalculation/app/src/main/res/layout/fragment_triangle__inscribedcircle.xml" value="0.33" />
+        <entry key="..\:/Users/husey/AndroidStudioProjects/GeometricCalculation/app/src/main/res/layout/fragment_quadrangle.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/husey/AndroidStudioProjects/GeometricCalculation/app/src/main/res/layout/fragment_quadrilateral.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/husey/AndroidStudioProjects/GeometricCalculation/app/src/main/res/layout/fragment_rectangle.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/husey/AndroidStudioProjects/GeometricCalculation/app/src/main/res/layout/fragment_sphere.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/husey/AndroidStudioProjects/GeometricCalculation/app/src/main/res/layout/fragment_square.xml" value="0.2" />
+        <entry key="..\:/Users/husey/AndroidStudioProjects/GeometricCalculation/app/src/main/res/layout/fragment_stewart_theorem.xml" value="0.25" />
+        <entry key="..\:/Users/husey/AndroidStudioProjects/GeometricCalculation/app/src/main/res/layout/fragment_trapezoid.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/husey/AndroidStudioProjects/GeometricCalculation/app/src/main/res/layout/fragment_triangle__inscribedcircle.xml" value="0.25" />
         <entry key="..\:/Users/husey/AndroidStudioProjects/GeometricCalculation/app/src/main/res/layout/fragment_triangle__isosceles.xml" value="0.25" />
-        <entry key="..\:/Users/husey/AndroidStudioProjects/GeometricCalculation/app/src/main/res/layout/fragment_triangle_area.xml" value="0.18888888888888888" />
+        <entry key="..\:/Users/husey/AndroidStudioProjects/GeometricCalculation/app/src/main/res/layout/fragment_triangle_area.xml" value="0.22" />
+        <entry key="..\:/Users/husey/AndroidStudioProjects/GeometricCalculation/app/src/main/res/layout/fragment_triangle_list.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/husey/AndroidStudioProjects/GeometricCalculation/app/src/main/res/layout/spinner_text.xml" value="0.14907407407407408" />
       </map>
     </option>
@@ -35,5 +55,8 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="SuppressKotlinCodeStyleNotification">
+    <option name="disableForAll" value="true" />
   </component>
 </project>

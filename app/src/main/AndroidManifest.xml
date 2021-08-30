@@ -1,77 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.hsynshnl.geometriccalculation">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
-        android:largeHeap="true"
         android:hardwareAccelerated="false"
         android:icon="@drawable/ic"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@drawable/ic_launcher"
         android:supportsRtl="true"
-
         android:theme="@style/Theme.GeometricCalculation">
         <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-1257535779017345~2957082354"/>
-        <activity
-            android:name=".Circle.MainCircleActivity"
-            android:exported="true"
-            android:parentActivityName=".Circle.MainCircleActivity"/>
-        <activity
-            android:name=".Cube.MainCubeActivity"
-            android:exported="true"
-            android:parentActivityName=".Cube.MainCubeActivity"/>
-        <activity
-            android:name=".Cylinder.MainCylinderActivity"
-            android:exported="true"
-            android:parentActivityName=".Cylinder.MainCylinderActivity"/>
-        <activity
-            android:name=".Ellipse.MainEllipseActivity"
-            android:exported="true"
-            android:parentActivityName=".Ellipse.MainEllipseActivity"/>
-        <activity
-            android:name=".EquilateralQuadrangle.MainEquilateralQuadrangleActivity"
-            android:exported="true"
-            android:parentActivityName=".EquilateralQuadrangle.MainEquilateralQuadrangleActivity" />
-        <activity
-            android:name=".Parallel.MainParallelActivity"
-            android:exported="true"
-            android:parentActivityName=".Parallel.MainParallelActivity" />
-        <activity
-            android:name=".Parallelogram.MainParallelogramActivity"
-            android:exported="true"
-            android:parentActivityName=".Parallelogram.MainParallelogramActivity" />
-        <activity
-            android:name=".Polygon.MainPolygonActivity"
-            android:exported="true"
-            android:parentActivityName=".Polygon.MainPolygonActivity" />
-      <activity
-            android:name=".Quadrilateral.MainQuadrilateralActivity"
-            android:exported="true"
-            android:parentActivityName=".Quadrilateral.MainQuadrilateralActivity" />
-        <activity
-            android:name=".Rectangle.MainRectangleActivity"
-            android:exported="true"
-            android:parentActivityName=".Rectangle.MainRectangleActivity" />
-        <activity
-            android:name=".Sphere.MainSphereActivity"
-            android:exported="true"
-            android:parentActivityName=".Sphere.MainSphereActivity" />
-        <activity
-            android:name=".Square.MainSquareActivity"
-            android:exported="true"
-            android:parentActivityName=".Square.MainSquareActivity" />
-        <activity
-            android:name=".Trapezoid.MainTrapezoidActivity"
-            android:exported="true"
-            android:parentActivityName=".Trapezoid.MainTrapezoidActivity" />
-        <activity
-            android:name=".Triangle.MainTriangleActivity"
-            android:parentActivityName=".Triangle.MainTriangleActivity" />
-        <activity android:name=".MainActivity">
+            android:value="ca-app-pub-1257535779017345~2957082354" />
+        <activity android:name=".MainActivity"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

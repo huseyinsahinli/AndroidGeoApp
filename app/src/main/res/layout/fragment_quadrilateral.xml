@@ -3,10 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Triangle.fragments.TriangleArea">
+    tools:context=".QuadrilateralFragment">
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
+
         android:layout_height="match_parent"
         android:orientation="vertical">
 
@@ -15,7 +17,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:text="@string/Triangle"
+            android:text="@string/Quadrilateral"
             android:textColor="@color/teal_700"
             android:textSize="20sp"
             android:textStyle="bold"></TextView>
@@ -23,40 +25,41 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
-            android:layout_height="165dp"
+            android:layout_height="180dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:src="@drawable/fragment_area"
-            tools:ignore="ImageContrastCheck" />
+            android:src="@drawable/fragment_quadrilateral"
+
+            />
 
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:orientation="horizontal">
-
-
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
             <LinearLayout
-
-                android:id="@+id/LinearOne"
+                android:id="@+id/liner_a"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_gravity="center">
 
                 <TextView
+                    android:id="@+id/text_view_a"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:text="@string/a"
                     android:textColor="@color/black"
-                    android:textSize="25sp" />
+                    android:textSize="25sp"/>
 
                 <EditText
-                    android:id="@+id/triangle_area_number_a"
+                    android:id="@+id/fragment_quarilateral_number_a"
                     android:layout_width="95dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center"
@@ -74,29 +77,27 @@
                     android:textSize="20sp"
                     android:textStyle="bold"
                     tools:ignore="DuplicateSpeakableTextCheck" />
-
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/liner_b"
+                android:layout_marginLeft="5dp"
                 android:layout_width="wrap_content"
-
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="10dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_gravity="center">
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="@string/h"
+                    android:text="@string/d1"
                     android:textColor="@color/black"
-                    android:textSize="25sp" />
+                    android:textSize="25sp"/>
 
                 <EditText
-                    android:id="@+id/triangle_area_number_h"
+                    android:id="@+id/fragment_quarilateral_number_d1"
                     android:layout_width="95dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center"
@@ -112,15 +113,56 @@
                     android:textColor="@color/white"
                     android:textColorHint="@color/white"
                     android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    tools:ignore="DuplicateSpeakableTextCheck"  />
+            </LinearLayout>
 
+            <LinearLayout
+                android:id="@+id/liner_c"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/text_view_c"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/d2"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"/>
+
+                <EditText
+
+                    android:id="@+id/fragment_quarilateral_number_d2"
+                    android:layout_width="95dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edit_text_bg"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="@string/_0"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="DuplicateSpeakableTextCheck" />
             </LinearLayout>
         </LinearLayout>
 
 
         <Button
 
-            android:id="@+id/triangle_are_calculate"
+            android:id="@+id/fragment_quarilateral_calculate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -133,20 +175,18 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/triangle_area_result"
+            android:id="@+id/fragment_quarilateral_result"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="15dp"
-            android:padding="5dp"
             android:background="@drawable/result_text_desing"
+            android:padding="5dp"
 
             android:textAlignment="center"
             android:textColor="@color/teal_700"
             android:textSize="20sp"
             android:textStyle="bold"></TextView>
-
-
     </LinearLayout>
 
 </FrameLayout>

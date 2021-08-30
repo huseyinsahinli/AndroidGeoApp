@@ -3,11 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Triangle.fragments.TriangleArea">
+    tools:context=".CylinderFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <TextView
@@ -15,7 +15,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:text="@string/Triangle"
+            android:text="@string/Cylinder"
             android:textColor="@color/teal_700"
             android:textSize="20sp"
             android:textStyle="bold"></TextView>
@@ -26,8 +26,9 @@
             android:layout_height="165dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:src="@drawable/fragment_area"
-            tools:ignore="ImageContrastCheck" />
+            android:src="@drawable/fragment_cylinder"
+
+            />
 
 
         <LinearLayout
@@ -51,12 +52,12 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:text="@string/a"
+                    android:text="@string/r"
                     android:textColor="@color/black"
                     android:textSize="25sp" />
 
                 <EditText
-                    android:id="@+id/triangle_area_number_a"
+                    android:id="@+id/fragment_cylinder_number_r"
                     android:layout_width="95dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center"
@@ -96,7 +97,7 @@
                     android:textSize="25sp" />
 
                 <EditText
-                    android:id="@+id/triangle_area_number_h"
+                    android:id="@+id/fragment_cylinder_number_h"
                     android:layout_width="95dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center"
@@ -117,30 +118,28 @@
             </LinearLayout>
         </LinearLayout>
 
-
         <Button
-
-            android:id="@+id/triangle_are_calculate"
+            android:id="@+id/fragment_cylinder_calcute"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="15dp"
             android:background="@drawable/button_desing"
+            android:gravity="center"
             android:text="@string/Button_Text"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textSize="20sp"
+            android:textSize="20dp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/triangle_area_result"
+            android:id="@+id/fragment_cylinder_result"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="15dp"
-            android:padding="5dp"
             android:background="@drawable/result_text_desing"
-
+            android:padding="5dp"
             android:textAlignment="center"
             android:textColor="@color/teal_700"
             android:textSize="20sp"

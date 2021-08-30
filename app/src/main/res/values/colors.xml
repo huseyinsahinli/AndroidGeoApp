@@ -8,4 +8,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="ActionBarTitleColor">@color/white</color>
+    <color name="ActionBarBackgroundColor">@color/teal_700</color>
 </resources>

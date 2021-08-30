@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_triangle"
+    app:startDestination="@id/triangleListFragment">
+    <fragment
+        android:id="@+id/triangle_Inscribedcircle"
+        android:name="com.hsynshnl.geometriccalculation.Triangle.fragments.Triangle_Inscribedcircle"
+        android:label="@string/Inscribedcircle"
+        tools:layout="@layout/fragment_triangle__inscribedcircle">
+        <action
+            android:id="@+id/action_triangle_Inscribedcircle_to_triangleListFragment"
+            app:destination="@id/triangleListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/euclideanTheorem"
+        android:name="com.hsynshnl.geometriccalculation.Triangle.fragments.EuclideanTheorem"
+        android:label="@string/EuclideanTheorem"
+        tools:layout="@layout/fragment_euclidean_theorem">
+        <action
+            android:id="@+id/action_euclideanTheorem_to_triangleListFragment"
+            app:destination="@id/triangleListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/stewartTheorem"
+        android:name="com.hsynshnl.geometriccalculation.Triangle.fragments.StewartTheorem"
+        android:label="@string/StewartTheorem"
+        tools:layout="@layout/fragment_stewart_theorem">
+        <action
+            android:id="@+id/action_stewartTheorem_to_triangleListFragment"
+            app:destination="@id/triangleListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/triangleArea"
+        android:name="com.hsynshnl.geometriccalculation.Triangle.fragments.TriangleArea"
+        android:label="@string/Triangle"
+        tools:layout="@layout/fragment_triangle_area">
+        <action
+            android:id="@+id/action_triangleArea_to_triangleListFragment"
+            app:destination="@id/triangleListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/triangleListFragment"
+        android:name="com.hsynshnl.geometriccalculation.Triangle.TriangleListFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_triangle_list">
+        <action
+            android:id="@+id/action_triangleListFragment_to_pythagoreanTheorem"
+            app:destination="@id/pythagoreanTheorem" />
+        <action
+            android:id="@+id/action_triangleListFragment_to_triangleArea"
+            app:destination="@id/triangleArea" />
+        <action
+            android:id="@+id/action_triangleListFragment_to_euclideanTheorem"
+            app:destination="@id/euclideanTheorem" />
+        <action
+            android:id="@+id/action_triangleListFragment_to_equilateralTriangle"
+            app:destination="@id/equilateralTriangle" />
+        <action
+            android:id="@+id/action_triangleListFragment_to_stewartTheorem"
+            app:destination="@id/stewartTheorem" />
+        <action
+            android:id="@+id/action_triangleListFragment_to_triangle_Inscribedcircle"
+            app:destination="@id/triangle_Inscribedcircle" />
+        <action
+            android:id="@+id/action_triangleListFragment_to_triangle_Isosceles"
+            app:destination="@id/triangle_Isosceles" />
+    </fragment>
+    <fragment
+        android:id="@+id/triangle_Isosceles"
+        android:name="com.hsynshnl.geometriccalculation.Triangle.fragments.Triangle_Isosceles"
+        android:label="@string/IsoscelesTriangle"
+        tools:layout="@layout/fragment_triangle__isosceles">
+        <action
+            android:id="@+id/action_triangle_Isosceles_to_triangleListFragment"
+            app:destination="@id/triangleListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/equilateralTriangle"
+        android:name="com.hsynshnl.geometriccalculation.Triangle.fragments.EquilateralTriangle"
+        android:label="@string/EquilateralTriangle"
+        tools:layout="@layout/fragment_equilateral_triangle">
+        <action
+            android:id="@+id/action_equilateralTriangle_to_triangleListFragment"
+            app:destination="@id/triangleListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pythagoreanTheorem"
+        android:name="com.hsynshnl.geometriccalculation.Triangle.fragments.PythagoreanTheorem"
+        android:label="@string/PythagoreanTheorem"
+        tools:layout="@layout/fragment_pythagorean_theorem">
+        <action
+            android:id="@+id/action_pythagoreanTheorem_to_triangleListFragment"
+            app:destination="@id/triangleListFragment" />
+    </fragment>
+</navigation>

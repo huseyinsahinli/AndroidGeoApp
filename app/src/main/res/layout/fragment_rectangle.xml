@@ -3,19 +3,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Triangle.fragments.TriangleArea">
+    tools:context=".RectangleFragment">
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:text="@string/Triangle"
+            android:text="@string/Rectangle"
             android:textColor="@color/teal_700"
             android:textSize="20sp"
             android:textStyle="bold"></TextView>
@@ -26,8 +29,9 @@
             android:layout_height="165dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:src="@drawable/fragment_area"
-            tools:ignore="ImageContrastCheck" />
+            android:src="@drawable/fragment_rectangle"
+
+            />
 
 
         <LinearLayout
@@ -56,7 +60,7 @@
                     android:textSize="25sp" />
 
                 <EditText
-                    android:id="@+id/triangle_area_number_a"
+                    android:id="@+id/fragment_rectangle_number_a"
                     android:layout_width="95dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center"
@@ -91,12 +95,12 @@
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="@string/h"
+                    android:text="@string/b"
                     android:textColor="@color/black"
                     android:textSize="25sp" />
 
                 <EditText
-                    android:id="@+id/triangle_area_number_h"
+                    android:id="@+id/fragment_rectangle_number_b"
                     android:layout_width="95dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center"
@@ -120,7 +124,7 @@
 
         <Button
 
-            android:id="@+id/triangle_are_calculate"
+            android:id="@+id/fragment_rectangle_calculate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -128,12 +132,13 @@
             android:background="@drawable/button_desing"
             android:text="@string/Button_Text"
             android:textAllCaps="false"
+            android:gravity="center"
             android:textColor="@color/white"
-            android:textSize="20sp"
+            android:textSize="20dp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/triangle_area_result"
+            android:id="@+id/fragment_rectangle_result"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

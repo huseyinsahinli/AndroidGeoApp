@@ -11,7 +11,6 @@ import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.core.widget.doOnTextChanged
 import com.hsynshnl.geometriccalculation.R
-import kotlinx.android.synthetic.main.activity_main_cube.*
 import kotlinx.android.synthetic.main.fragment_euclidean_theorem.*
 import kotlinx.android.synthetic.main.fragment_euclidean_theorem.text_view_number_a
 import kotlinx.android.synthetic.main.fragment_euclidean_theorem.text_view_number_p
@@ -91,22 +90,22 @@ class EuclideanTheorem : Fragment() {
         }
         calculate2.setOnClickListener {
 
-            var number_a = text_view_number_a.text.toString().toDoubleOrNull()
-            var number_p = text_view_number_p.text.toString().toDoubleOrNull()
-            var number_k = text_view_number_k.text.toString().toDoubleOrNull()
-            var result: Double? = null
-            if(number_a!=null&&number_k!=null){
-           result=Math.sqrt(number_a*number_k)
-                text_view_result2.text=getString(R.string.Result)+"\nb= ${result.format(2)}\nb²= ${number_a*number_k}"
-            }else if(number_a!=null&&number_p!=null){
-                result=Math.sqrt(number_a*number_p)
-                text_view_result2.text=getString(R.string.Result)+"\nc= ${result.format(2)}\nc²= ${number_a*number_p}"
-            }else if(number_p!=null&&number_k!=null){
-                result=Math.sqrt(number_p*number_k)
-                text_view_result2.text=getString(R.string.Result)+"\nh= ${result.format(2)}\nh²= ${number_p*number_k}"
+            val a_number = text_view_number_a.text.toString().toDoubleOrNull()
+            val p_number = text_view_number_p.text.toString().toDoubleOrNull()
+            val k_number = text_view_number_k.text.toString().toDoubleOrNull()
+            val result: Double
+            if(a_number!=null&&k_number!=null){
+           result=Math.sqrt(a_number*k_number)
+                text_view_result2.text=getString(R.string.Result)+"\nb= ${result.format(2)}\nb²= ${a_number*k_number}"
+            }else if(a_number!=null&&p_number!=null){
+                result=Math.sqrt(a_number*p_number)
+                text_view_result2.text=getString(R.string.Result)+"\nc= ${result.format(2)}\nc²= ${a_number*p_number}"
+            }else if(p_number!=null&&k_number!=null){
+                result=Math.sqrt(p_number*k_number)
+                text_view_result2.text=getString(R.string.Result)+"\nh= ${result.format(2)}\nh²= ${p_number*k_number}"
 
             }else{
-                Toast.makeText(context?.applicationContext, getString(R.string.PythagoreanSentenceFive), Toast.LENGTH_SHORT).show()
+                Toast.makeText(context?.applicationContext, getString(R.string.ToastMessage), Toast.LENGTH_SHORT).show()
             }
 
 

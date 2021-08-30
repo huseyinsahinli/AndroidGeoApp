@@ -3,96 +3,176 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/triangleListFragment">
+    app:startDestination="@id/mainFragment">
 
     <fragment
-        android:id="@+id/triangleListFragment"
-        android:name="com.hsynshnl.geometriccalculation.Triangle.TriangleListFragment"
-        android:label="fragment_triangle_list"
-        tools:layout="@layout/fragment_triangle_list" >
+        android:id="@+id/mainFragment"
+        android:name="com.hsynshnl.geometriccalculation.MainFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_main">
         <action
-            android:id="@+id/action_triangleListFragment_to_pythagoreanTheorem"
-            app:destination="@id/pythagoreanTheorem" />
+            android:id="@+id/action_mainFragment_to_nav_triangle"
+            app:destination="@id/nav_triangle"
+            />
         <action
-            android:id="@+id/action_triangleListFragment_to_triangleArea"
-            app:destination="@id/triangleArea" />
+            android:id="@+id/action_mainFragment_to_circleFragment"
+            app:destination="@id/circleFragment" />
         <action
-            android:id="@+id/action_triangleListFragment_to_euclideanTheorem"
-            app:destination="@id/euclideanTheorem" />
+            android:id="@+id/action_mainFragment_to_cubeFragment"
+            app:destination="@id/cubeFragment" />
         <action
-            android:id="@+id/action_triangleListFragment_to_equilateralTriangle"
-            app:destination="@id/equilateralTriangle" />
+            android:id="@+id/action_mainFragment_to_cylinderFragment"
+            app:destination="@id/cylinderFragment" />
         <action
-            android:id="@+id/action_triangleListFragment_to_stewartTheorem"
-            app:destination="@id/stewartTheorem" />
+            android:id="@+id/action_mainFragment_to_ellipseFragment"
+            app:destination="@id/ellipseFragment" />
         <action
-            android:id="@+id/action_triangleListFragment_to_triangle_Inscribedcircle"
-            app:destination="@id/triangle_Inscribedcircle" />
+            android:id="@+id/action_mainFragment_to_parallelFragment"
+            app:destination="@id/parallelFragment" />
         <action
-            android:id="@+id/action_triangleListFragment_to_triangle_Isosceles"
-            app:destination="@id/triangle_Isosceles" />
+            android:id="@+id/action_mainFragment_to_sphereFragment"
+            app:destination="@id/sphereFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_squareFragment"
+            app:destination="@id/squareFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_quadrilateralFragment"
+            app:destination="@id/quadrilateralFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_quadrangleFragment"
+            app:destination="@id/quadrangleFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_polygonFragment"
+            app:destination="@id/polygonFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_parallelogramFragment"
+            app:destination="@id/parallelogramFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_trapezoidFragment"
+            app:destination="@id/trapezoidFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_rectangleFragment"
+            app:destination="@id/rectangleFragment" />
+    </fragment>
+    <include app:graph="@navigation/nav_triangle" />
+    <fragment
+        android:id="@+id/circleFragment"
+        android:name="com.hsynshnl.geometriccalculation.CircleFragment"
+        android:label="@string/Circle"
+        tools:layout="@layout/fragment_circle">
+        <action
+            android:id="@+id/action_circleFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
     <fragment
-        android:id="@+id/pythagoreanTheorem"
-        android:name="com.hsynshnl.geometriccalculation.Triangle.fragments.PythagoreanTheorem"
-        android:label="fragment_pythagorean_theorem"
-        tools:layout="@layout/fragment_pythagorean_theorem" >
+        android:id="@+id/cubeFragment"
+        android:name="com.hsynshnl.geometriccalculation.CubeFragment"
+        android:label="@string/Cube"
+        tools:layout="@layout/fragment_cube">
         <action
-            android:id="@+id/action_pythagoreanTheorem_to_triangleListFragment"
-            app:destination="@id/triangleListFragment" />
+            android:id="@+id/action_cubeFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
     <fragment
-        android:id="@+id/equilateralTriangle"
-        android:name="com.hsynshnl.geometriccalculation.Triangle.fragments.EquilateralTriangle"
-        android:label="fragment_equilateral_triangle"
-        tools:layout="@layout/fragment_equilateral_triangle" >
+        android:id="@+id/cylinderFragment"
+        android:name="com.hsynshnl.geometriccalculation.CylinderFragment"
+        android:label="@string/Cylinder"
+        tools:layout="@layout/fragment_cylinder">
         <action
-            android:id="@+id/action_equilateralTriangle_to_triangleListFragment"
-            app:destination="@id/triangleListFragment" />
+            android:id="@+id/action_cylinderFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
     <fragment
-        android:id="@+id/euclideanTheorem"
-        android:name="com.hsynshnl.geometriccalculation.Triangle.fragments.EuclideanTheorem"
-        android:label="fragment_euclidean_theorem"
-        tools:layout="@layout/fragment_euclidean_theorem" >
+        android:id="@+id/ellipseFragment"
+        android:name="com.hsynshnl.geometriccalculation.EllipseFragment"
+        android:label="@string/Ellipse"
+        tools:layout="@layout/fragment_ellipse">
         <action
-            android:id="@+id/action_euclideanTheorem_to_triangleListFragment"
-            app:destination="@id/triangleListFragment" />
+            android:id="@+id/action_ellipseFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
     <fragment
-        android:id="@+id/triangleArea"
-        android:name="com.hsynshnl.geometriccalculation.Triangle.fragments.TriangleArea"
-        android:label="fragment_triangle_area"
-        tools:layout="@layout/fragment_triangle_area" >
+        android:id="@+id/parallelFragment"
+        android:name="com.hsynshnl.geometriccalculation.ParallelFragment"
+        android:label="@string/Parallel"
+        tools:layout="@layout/fragment_parallel">
         <action
-            android:id="@+id/action_triangleArea_to_triangleListFragment"
-            app:destination="@id/triangleListFragment" />
+            android:id="@+id/action_parallelFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
     <fragment
-        android:id="@+id/stewartTheorem"
-        android:name="com.hsynshnl.geometriccalculation.Triangle.fragments.StewartTheorem"
-        android:label="fragment_stewart_theorem"
-        tools:layout="@layout/fragment_stewart_theorem" >
+        android:id="@+id/trapezoidFragment"
+        android:name="com.hsynshnl.geometriccalculation.TrapezoidFragment"
+        android:label="@string/Trapezoid"
+        tools:layout="@layout/fragment_trapezoid" >
         <action
-            android:id="@+id/action_stewartTheorem_to_triangleListFragment"
-            app:destination="@id/triangleListFragment" />
+            android:id="@+id/action_trapezoidFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
     <fragment
-        android:id="@+id/triangle_Inscribedcircle"
-        android:name="com.hsynshnl.geometriccalculation.Triangle.fragments.Triangle_Inscribedcircle"
-        android:label="fragment_triangle__inscribedcircle"
-        tools:layout="@layout/fragment_triangle__inscribedcircle" >
+        android:id="@+id/parallelogramFragment"
+        android:name="com.hsynshnl.geometriccalculation.ParallelogramFragment"
+        android:label="@string/Parallelogram"
+        tools:layout="@layout/fragment_parallelogram" >
         <action
-            android:id="@+id/action_triangle_Inscribedcircle_to_triangleListFragment"
-            app:destination="@id/triangleListFragment" />
+            android:id="@+id/action_parallelogramFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
     <fragment
-        android:id="@+id/triangle_Isosceles"
-        android:name="com.hsynshnl.geometriccalculation.Triangle.fragments.Triangle_Isosceles"
-        android:label="fragment_triangle__isosceles"
-        tools:layout="@layout/fragment_triangle__isosceles" >
+        android:id="@+id/polygonFragment"
+        android:name="com.hsynshnl.geometriccalculation.PolygonFragment"
+        android:label="@string/Polygon"
+        tools:layout="@layout/fragment_polygon" >
         <action
-            android:id="@+id/action_triangle_Isosceles_to_triangleListFragment"
-            app:destination="@id/triangleListFragment" />
+            android:id="@+id/action_polygonFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quadrangleFragment"
+        android:name="com.hsynshnl.geometriccalculation.QuadrangleFragment"
+        android:label="@string/Quadrangle"
+        tools:layout="@layout/fragment_quadrangle" >
+        <action
+            android:id="@+id/action_quadrangleFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quadrilateralFragment"
+        android:name="com.hsynshnl.geometriccalculation.QuadrilateralFragment"
+        android:label="@string/Quadrilateral"
+        tools:layout="@layout/fragment_quadrilateral">
+        <action
+            android:id="@+id/action_quadrilateralFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_quadrilateralFragment_to_mainFragment2"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rectangleFragment"
+        android:name="com.hsynshnl.geometriccalculation.RectangleFragment"
+        android:label="@string/Rectangle"
+        tools:layout="@layout/fragment_rectangle" >
+        <action
+            android:id="@+id/action_rectangleFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sphereFragment"
+        android:name="com.hsynshnl.geometriccalculation.SphereFragment"
+        android:label="@string/Sphere"
+        tools:layout="@layout/fragment_sphere">
+        <action
+            android:id="@+id/action_sphereFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/squareFragment"
+        android:name="com.hsynshnl.geometriccalculation.SquareFragment"
+        android:label="@string/Square"
+        tools:layout="@layout/fragment_square">
+        <action
+            android:id="@+id/action_squareFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
 </navigation>
